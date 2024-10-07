@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CEA449D32CAFE86100198F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449D22CAFE86100198F13 /* AppDelegate.swift */; };
 		CEA449D52CAFE86100198F13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449D42CAFE86100198F13 /* SceneDelegate.swift */; };
-		CEA449D72CAFE86100198F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449D62CAFE86100198F13 /* ViewController.swift */; };
-		CEA449DA2CAFE86100198F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA449D82CAFE86100198F13 /* Main.storyboard */; };
 		CEA449DC2CAFE86300198F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA449DB2CAFE86300198F13 /* Assets.xcassets */; };
 		CEA449DF2CAFE86300198F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA449DD2CAFE86300198F13 /* LaunchScreen.storyboard */; };
+		CEA449EC2CAFE95F00198F13 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449EB2CAFE95F00198F13 /* NetworkManager.swift */; };
+		CEA449EE2CAFE97100198F13 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449ED2CAFE97100198F13 /* ImageStorage.swift */; };
+		CEA449F02CAFEA0100198F13 /* CollectionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449EF2CAFEA0100198F13 /* CollectionImage.swift */; };
+		CEA449F22CAFEF8800198F13 /* MainImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449F12CAFEF8800198F13 /* MainImageViewController.swift */; };
+		CEA449F42CAFEFF100198F13 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449F32CAFEFF100198F13 /* ImageViewModel.swift */; };
+		CEA449F62CB0102600198F13 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA449F52CB0102600198F13 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEA449CF2CAFE86100198F13 /* CarImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA449D22CAFE86100198F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA449D42CAFE86100198F13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEA449D62CAFE86100198F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEA449D92CAFE86100198F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA449DB2CAFE86300198F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA449DE2CAFE86300198F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEA449E02CAFE86300198F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA449E02CAFE86300198F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CarImageDownloader/App/Info.plist; sourceTree = SOURCE_ROOT; };
+		CEA449EB2CAFE95F00198F13 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEA449ED2CAFE97100198F13 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
+		CEA449EF2CAFEA0100198F13 /* CollectionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImage.swift; sourceTree = "<group>"; };
+		CEA449F12CAFEF8800198F13 /* MainImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageViewController.swift; sourceTree = "<group>"; };
+		CEA449F32CAFEFF100198F13 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		CEA449F52CB0102600198F13 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		CEA449D12CAFE86100198F13 /* CarImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				CEA449D22CAFE86100198F13 /* AppDelegate.swift */,
-				CEA449D42CAFE86100198F13 /* SceneDelegate.swift */,
-				CEA449D62CAFE86100198F13 /* ViewController.swift */,
-				CEA449D82CAFE86100198F13 /* Main.storyboard */,
-				CEA449DB2CAFE86300198F13 /* Assets.xcassets */,
-				CEA449DD2CAFE86300198F13 /* LaunchScreen.storyboard */,
-				CEA449E02CAFE86300198F13 /* Info.plist */,
+				CEA449F72CB1413900198F13 /* App */,
+				CEA449E62CAFE8A200198F13 /* Models */,
+				CEA449E72CAFE8AE00198F13 /* Views */,
+				CEA449E82CAFE8BA00198F13 /* ViewModels */,
+				CEA449E92CAFE8C400198F13 /* Service */,
+				CEA449EA2CAFE8DC00198F13 /* Resources */,
 			);
 			path = CarImageDownloader;
+			sourceTree = "<group>";
+		};
+		CEA449E62CAFE8A200198F13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449EF2CAFEA0100198F13 /* CollectionImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEA449E72CAFE8AE00198F13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449F12CAFEF8800198F13 /* MainImageViewController.swift */,
+				CEA449F52CB0102600198F13 /* ImageCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEA449E82CAFE8BA00198F13 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449F32CAFEFF100198F13 /* ImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEA449E92CAFE8C400198F13 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449EB2CAFE95F00198F13 /* NetworkManager.swift */,
+				CEA449ED2CAFE97100198F13 /* ImageStorage.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEA449EA2CAFE8DC00198F13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449DD2CAFE86300198F13 /* LaunchScreen.storyboard */,
+				CEA449DB2CAFE86300198F13 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEA449F72CB1413900198F13 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEA449D22CAFE86100198F13 /* AppDelegate.swift */,
+				CEA449D42CAFE86100198F13 /* SceneDelegate.swift */,
+				CEA449E02CAFE86300198F13 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				CEA449DF2CAFE86300198F13 /* LaunchScreen.storyboard in Resources */,
 				CEA449DC2CAFE86300198F13 /* Assets.xcassets in Resources */,
-				CEA449DA2CAFE86100198F13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA449D72CAFE86100198F13 /* ViewController.swift in Sources */,
+				CEA449F42CAFEFF100198F13 /* ImageViewModel.swift in Sources */,
+				CEA449EC2CAFE95F00198F13 /* NetworkManager.swift in Sources */,
+				CEA449F62CB0102600198F13 /* ImageCollectionViewCell.swift in Sources */,
+				CEA449F02CAFEA0100198F13 /* CollectionImage.swift in Sources */,
+				CEA449EE2CAFE97100198F13 /* ImageStorage.swift in Sources */,
 				CEA449D32CAFE86100198F13 /* AppDelegate.swift in Sources */,
 				CEA449D52CAFE86100198F13 /* SceneDelegate.swift in Sources */,
+				CEA449F22CAFEF8800198F13 /* MainImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEA449D82CAFE86100198F13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEA449D92CAFE86100198F13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEA449DD2CAFE86300198F13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +344,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarImageDownloader/Info.plist;
+				INFOPLIST_FILE = CarImageDownloader/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +370,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarImageDownloader/Info.plist;
+				INFOPLIST_FILE = CarImageDownloader/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
