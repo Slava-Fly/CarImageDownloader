@@ -11,10 +11,10 @@
 <img src="https://github.com/user-attachments/assets/e18279c0-1449-4138-8684-1c90d10911a2" width="200">
 
 ## Technologies
-Xcode
+- Xcode
 
-Swift
+- Swift
 
-UIKit
+- UIKit
 
-IOS SDK
+- IOS SDK
